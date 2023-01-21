@@ -1,0 +1,21 @@
+<apex:page controller="ACT">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageBlockSection >
+           
+                <apex:pageblockTable value="{!rec}" var="a"> 
+                <apex:column value="{!a.Name__c}"/>
+                <apex:column value="{!a.Age__c}"/>
+                <apex:column value="{!a.Relation__c}"/>
+                <apex:column value="{!a.Monthly_Income__c}"/>
+ 
+                
+                
+                
+                </apex:pageblockTable>
+            
+           
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

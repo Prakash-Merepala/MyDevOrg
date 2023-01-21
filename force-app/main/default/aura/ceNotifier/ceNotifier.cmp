@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable" >
+	<aura:handler name="cmpEvent" event="c:ceEvent" action="{!c.handleComponentEvent}"/>
+    <aura:attribute name="input1" type="Integer" />
+ 	The result is {!v.input1}
+</aura:component>

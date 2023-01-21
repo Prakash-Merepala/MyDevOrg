@@ -1,0 +1,12 @@
+<apex:page controller="jp">
+   <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+          <apex:outputLabel > Enter name: </apex:outputLabel>
+          <apex:inputText value="{!Username}"/>
+          <apex:commandButton value="Click Me" action="{!ShowMessage}"/>
+          <apex:outputLabel > {!message} </apex:outputLabel>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

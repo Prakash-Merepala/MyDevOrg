@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="CasesList" type="Case[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+    
+    <aura:iteration  items="{!v.CasesList}" var="case">
+    	
+            Case Name = {!case.Name} <br/>
+    	
+    </aura:iteration>
+
+</aura:component>

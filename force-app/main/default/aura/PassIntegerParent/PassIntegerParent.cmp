@@ -1,0 +1,13 @@
+<!-- Parent Component -->
+<aura:component >
+    <aura:attribute name="input" type="Integer" />
+    <aura:handler name="yearEvent" event="c:PassIntegerEvent" action="{!c.handleEvent}" />
+    
+    <lightning:card>
+    	<div class="slds-box">
+            	This is: {!v.appValue}
+        	<lightning:textarea name="input1" label="Year of Birth" value="{!v.firedValue}"/>
+        </div>
+    </lightning:card>
+    <c:PassIntegerChild />
+</aura:component>

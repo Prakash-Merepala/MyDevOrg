@@ -1,0 +1,16 @@
+<aura:component  access="global">
+
+
+
+<lightning:card>
+   
+<lightning:input type="toggle" 
+                 label="Toggle value" 
+                 name="togglevalue" 
+                 checked="true" 
+                 messageToggleActive="On" 
+                 messageToggleInactive="Off"/>
+
+</lightning:card>
+
+</aura:component>

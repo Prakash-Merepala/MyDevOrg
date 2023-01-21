@@ -1,0 +1,88 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 09-26-2021
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="AT&T Sales Reps Activity Monitor">
+        <div class="slds-grid slds-gutters slds-m-right_medium slds-m-bottom_medium slds-m-top_small">
+
+            <!-- Create lookup for User object to select the Rep-->
+            <div class="slds-m-left_medium slds-col">
+                <span>
+                    <lightning-input name="enterUser" label="First Rep" type="search"></lightning-input>
+                    <lightning-input name="enterUser" label="Second Rep" type="search"></lightning-input>
+                    <lightning-input name="enterUser" label="Second Rep" type="search"></lightning-input>
+                    <lightning-input name="enterUser" label="Second Rep" type="search"></lightning-input>     
+                </span>
+            </div>
+            
+            <!-- Create action buttons to add the Rep to shift -->
+        
+            <div style="margin:2px; padding:5px;overflow: auto;">
+            <br>  
+                <span>
+                    <lightning-button title="Looks like a link" icon-name="utility:add" onclick={handleClick}>
+                    </lightning-button>
+                </span>
+            <br>
+            <br>
+                <span>
+                    <lightning-button title="Looks like a link" icon-name="utility:add" onclick={handleClick}>
+                    </lightning-button>
+                </span>
+            <br>
+            <br>
+                <span>
+                    <lightning-button title="Looks like a link" icon-name="utility:add" onclick={handleClick}>
+                    </lightning-button>
+                </span> 
+            <br>
+            <br>
+                <span>
+                    <lightning-button title="Looks like a link" icon-name="utility:add" onclick={handleClick}>
+                    </lightning-button>
+                </span>
+            </div> 
+            
+            <!-- Create picklist value for teh Rep status -->
+            <div class="slds-m-left_medium slds-col">
+                <span>
+                    <lightning-combobox name="progress" label="" value={value} placeholder="Select Progress" options={options1} 
+                        onchange={handleChange1}></lightning-combobox>
+                    <lightning-combobox name="progress" label="" value={value} placeholder="Select Progress" options={options2}
+                        onchange={handleChange2}></lightning-combobox>
+                    <lightning-combobox name="progress" label="" value={value} placeholder="Select Progress" options={options3}
+                        onchange={handleChange3}></lightning-combobox>
+                    <lightning-combobox name="progress" label="" value={value} placeholder="Select Progress" options={options4}
+                        onchange={handleChange4}></lightning-combobox>
+                </span>
+            </div>
+        </div>
+        <div class = "slds-card slds-grid slds-gutters slds-m-around_medium">
+            <div>
+                <span>
+                    <lightning-input name="enterUser" label="First Rep" type="search"></lightning-input>
+                </span>
+            </div>
+            <br>
+            <br>
+            <div style="margin:30px; padding:6px; overflow:auto;">
+                <span>
+                    <lightning-button title="Looks like a link" icon-name="utility:add" onclick={handleClick}>
+                    </lightning-button>
+                </span>
+            </div>
+            <br>
+            <br>
+            <div>
+                <span>
+                    <lightning-combobox name="progress" label="" value={value} placeholder="Select Progress" options={options1}
+                        onchange={handleChange1}></lightning-combobox>
+                </span>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,38 @@
+<apex:page controller="SearchFunction" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Search" action="{!searchrecords}" reRender="family-table" />            
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection id="family-table" columns="2" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel > value="Name__c" </apex:outputLabel>
+                    <apex:inputText value="{!name}" />	
+                </apex:pageBlockSectionItem>
+                
+                 <apex:pageBlockSectionItem >
+                    <apex:outputLabel > value="Age__c" </apex:outputLabel>
+                    <apex:inputText value="{!age}" />	
+                </apex:pageBlockSectionItem>
+                
+                 <apex:pageBlockSectionItem >
+                    <apex:outputLabel > value="Relation__c" </apex:outputLabel>
+                    <apex:inputText value="{!relation}" />		
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+             </apex:pageBlock>
+         <apex:pageBlock >
+             <apex:pageBlockSection >
+                <apex:pageBlockTable value="{!records}" var="a" width="5550px" >
+                    <apex:column >
+                        <apex:facet name="header" > {!a.Name__c} </apex:facet>
+                    </apex:column>
+                     <apex:column >
+                        <apex:facet name="header" > {!a.Age__c} </apex:facet>
+                    </apex:column>
+                    </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:listView 
+    aura:id="listViewCases"
+    objectApiName="Account"
+    listName="MyAccounts"
+    rows="5"
+    showSearchBar="true"
+    showActionBar="true"
+    enableInlineEdit="true"
+    showRowLevelActions="false"
+/>
+</aura:component>

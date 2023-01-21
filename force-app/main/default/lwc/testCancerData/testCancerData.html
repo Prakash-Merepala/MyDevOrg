@@ -1,0 +1,41 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-27-2021
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <!--Provide the input fields to enter the data-->
+    <div class="slds-box slds-theme_default"></div>
+        <lightning-input type="date" name="dob" label="Enter your date of birth" onchange={handleAge} ></lightning-input>
+    </div>
+    <div>
+        <lightning-output-field field-name="Age"> </lightning-output-field>
+    </div>
+    <lightning-combobox name="CancerType" 
+                        label="Type of Cancer" 
+                        value="" 
+                        placeholder="Select Type" 
+                        options={cancerType}
+                        onchange={handleType} 
+                        required>
+    </lightning-combobox>
+    <p>Selected value is: {value}</p>
+    <lightning-combobox name="Gender" 
+                        label="Gender" 
+                        value="None" 
+                        placeholder="Select gender" 
+                        options={gender}
+                        onchange={handleGender} 
+                        required>
+    </lightning-combobox>
+    <lightning-combobox name="info" 
+                        label="What info you would like to know" 
+                        value="" 
+                        placeholder="Select info" 
+                        options={infoType}
+                        onchange={handleInfoType} 
+                        required>
+    </lightning-combobox>
+</template>

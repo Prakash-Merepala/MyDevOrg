@@ -1,0 +1,35 @@
+<aura:component access="global" implements="flexipage:availableForAllPageTypes">
+    
+    <aura:attribute name="input1" type="Integer" />
+    <aura:attribute name="input2" type="integer"/>
+    <aura:attribute name="members" type="integer"/>
+    <aura:attribute name="result" type="integer"/>
+    <aura:attribute name="result1" type="integer"/>
+    <aura:attribute name="result2" type="integer"/>
+    <aura:attribute name="result3" type="integer"/>
+    <aura:attribute name="result4" type="integer"/>
+    <aura:attribute name="result5" type="integer"/>
+    <aura:attribute name="result6" type="integer"/>
+    
+    <lightning:card title="NABARD">
+        <aura:set attribute="actions">
+            <lightning:button variant="brand" label="New" onclick="{! c.clearValues }"/>
+        </aura:set>
+        <div class="box">
+            <lightning:input value="{!v.input1}" label="Total Loan Amount in lacs" formatter="currency" step="0.01" required="true" />
+            <lightning:input value="{!v.input2}" label="Programme Tenure in years" step="0.1" required="true" />
+            <lightning:input value="{!v.members}" type="number" name="input3" label="Number of benificiaries" required="true" />
+            <lightning:input label="District in which programme conducted" />
+            <lightning:input value="{!v.result}" label="Skill Mapping of Cluster" formatter="currency" />
+            <lightning:input value="{!v.result1}" label="Skill training" formatter="currency" />
+            <lightning:input value="{!v.result2}" label="Boarding Charges"  formatter="currency"/>
+            <lightning:input value="{!v.result3}" label="Raw Materials" formatter="currency" />
+            <lightning:input value="{!v.result4}" label="Exposure Visit" formatter="currency" />
+            <lightning:input value="{!v.result5}" label="Monitoring, Handholding and Credit Linkage" formatter="currency" />
+            <lightning:input value="{!v.result6}" label="Administration Cost" formatter="currency" />
+            <br/>
+            <lightning:button variant="brand" onclick="{! c.handleCalculation }" label="Calculate"/>
+            <lightning:button variant="brand" onclick="{! c.handleClear }" label="Clear"/>
+        </div>
+    </lightning:card>
+</aura:component>

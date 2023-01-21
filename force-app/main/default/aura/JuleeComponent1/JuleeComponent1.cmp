@@ -1,0 +1,12 @@
+<aura:component >
+    
+    <aura:attribute name="output" type="Integer" />
+    <aura:handler name="fireYear" event="c:JuleeEvent" action="{!c.handleEvent}" />
+    
+    <lightning:card>
+    	<div class="slds-box">
+            <lightning:textarea name="input1" label="The Fired Value" value="{!v.opYear}" />
+        </div>
+    </lightning:card>
+    
+</aura:component>

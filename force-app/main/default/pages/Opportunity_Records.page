@@ -1,0 +1,25 @@
+<apex:page controller="TestOpp">
+  <apex:form >
+  
+      <apex:pageblock >
+          <apex:pageBlockSection title="Opportunity Records" columns="2">
+              <apex:pageblockTable value="{!OppRec}" var="a">
+                <apex:column value="{!a.Name}"/> 
+                <apex:column value="{!a.StageName}"/>                  
+                <apex:column value="{!a.Amount}"/>                  
+                <apex:column value="{!a.ExpectedRevenue}"/>      
+                <apex:column value="{!a.CloseDate}"/>            
+
+              </apex:pageblockTable>
+          </apex:pageBlockSection>
+       <apex:pageBlockSection title="Family Records" columns="2">
+              <apex:pageblockTable value="{!FamRec}" var="a">
+                <apex:column value="{!a.Name__c}"/> 
+                <apex:column value="{!a.Age__c}"/>                  
+                <apex:column value="{!a.Monthly_Income__c}"/>                  
+                <apex:column value="{!a.Relation__c }"/>                
+              </apex:pageblockTable>
+          </apex:pageBlockSection>
+      </apex:pageblock>
+  </apex:form>
+</apex:page>

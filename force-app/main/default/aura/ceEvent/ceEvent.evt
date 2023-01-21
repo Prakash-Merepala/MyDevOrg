@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT">
+    
+        <aura:attribute name="Pass_Year" type="Integer"/>
+</aura:event>

@@ -1,0 +1,6 @@
+<aura:component >
+	<aura:attribute name="customerName" type="String"/>
+    <div> Hello {!v.customerName}!</div>
+    <ui:button label="Choose Mary" press="{!c.handleMaryClick}"/>
+    <ui:button label="Choose Clark" press="{!c.handleClarkClick}"/>
+</aura:component>

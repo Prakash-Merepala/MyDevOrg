@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="income" type="integer" />
+    
+    <aura:registerEvent name="passvalue" type="c.LightningComponentEvent" />
+   
+    <lightning:card>
+        <div class="slds-p-horizantal_medium">
+            <lightning:button variant="brand" name="fire" label="Send Value" onClick="{!c.sendValue}" />
+        </div>
+    </lightning:card>
+</aura:component>

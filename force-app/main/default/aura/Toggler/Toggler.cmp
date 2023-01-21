@@ -1,0 +1,58 @@
+<!--
+        @description: This component is the toggler for active Validation and
+						workflow rules for a certain Object.
+        @author     : Jaya prakash Merepala
+        @group      : 
+  @last modified on : 08-13-2021
+  @last modified by : Jaya prakash Merepala
+-->
+<aura:component implements="flexipage:availableForAllPageTypes" access = "global">
+
+    <aura:attribute name = "vtext" type    = "string" />
+    <aura:attribute name = "wtext" type    = "string" />
+    <aura:attribute name = "vstatustext" type = "string" />
+    <aura:attribute name = "wstatustext" type = "string" />
+
+    <aura:attribute name = "vtoggle" type = "Boolean" />
+    <aura:attribute name = "wtoggle" type = "Boolean" />
+
+    <lightning:card >
+        <li class="blue">
+            <div class="slds-box">
+                <img src = "{!$Resource.toggleCover}" height='4000' width='2000' />
+            </div>
+        </li>
+    <!--These are the Toggles for Validation and Workflow Rule-->
+    <lightning:layout multipleRows = "true">
+        <lightning:layoutItem padding  = "around-small">
+            <lightning:input aura:id="vtoggle" 
+                                type = "toggle" 
+                                label = "Turn Validations Off" 
+                                name = "vtogglevalue" 
+                                checked = "false" 
+                                messageToggleActive = "Enabled" 
+                                onchange = "{!c.handleValidation}" 
+                                messageToggleInactive = "Disabled" />
+        </lightning:layoutItem>
+        
+        <lightning:layoutItem padding="around-medium">
+            <ui:inputText label="Help text" class="field" value="{!v.vstatustext}" />
+        
+        </lightning:layoutItem>
+            <lightning:layoutItem padding = "around-medium">
+                <lightning:input aura:id="wtoggle" 
+                                    type = "toggle" 
+                                    label= "Turn Workflows Off" 
+                                    name= "wtogglevalue" 
+                                    checked = "false" 
+                                    onchange = "{!c.handleWorkflow}" 
+                                    messageToggleActive = "Enabled" 
+                                    messageToggleInactive = "Disabled" />
+            </lightning:layoutItem>
+            
+        <lightning:layoutItem padding = "around-small">
+            <ui:inputText label="Help text" class="field" value="{!v.wstatustext}" />
+        </lightning:layoutItem>
+    </lightning:layout>
+</lightning:card>
+</aura:component>

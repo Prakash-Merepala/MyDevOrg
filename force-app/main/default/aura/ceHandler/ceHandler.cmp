@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable">
+	
+    
+ 	<aura:registerEvent name="cmpEvent" type="c:ceEvent"/>
+    
+    <br/>
+    <ui:inputNumber aura:id="Input1" label="Input Year" required="true"/>
+ 	<ui:button label="Get Year" press="{!c.getYear}"/>
+    <br/>
+
+</aura:component>

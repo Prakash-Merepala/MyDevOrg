@@ -1,0 +1,14 @@
+<aura:component >
+	
+    <aura:attribute name="birthYear" type="Integer" />
+    <aura:registerEvent name="fireYear" type="c:JuleeEvent" />
+    
+    <lightning:card>
+    	<div class="slds-box">
+            <lightning:input type="number" name="inputYear" label="Year of Birth"/>
+        </div>
+        <div>
+            <lightning:button variant="brand" name="submit" label="Send the Value" onClick="{!handleClick}" />
+        </div>
+    </lightning:card>
+</aura:component>

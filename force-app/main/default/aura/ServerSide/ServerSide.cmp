@@ -1,0 +1,5 @@
+<aura:component controller="MyController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="firstName" type="string" default="salesforceKid"/>
+    <aura:attribute name="Link" type="url" default="www.google.com"/>
+	<ui:button label ="callServer" press="{!c.echo}"/>
+</aura:component>

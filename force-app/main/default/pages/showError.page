@@ -1,0 +1,16 @@
+<apex:page standardController="Account" extensions="showErrorController" >
+    <apex:pageMessages id="errormsg" />
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!saveAccount}" reRender="errormsg"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            </apex:pageBlockButtons>
+             
+            <apex:pageBlockSection columns="2" title="Account">
+                <apex:inputField value="{!Account.Express_Path_Criteria__c }"/>
+                <apex:inputField value="{!Account.Manual_Check_of_Validation__c }"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

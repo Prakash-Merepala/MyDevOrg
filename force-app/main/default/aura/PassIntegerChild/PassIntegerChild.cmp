@@ -1,0 +1,13 @@
+<!-- Child Component -->
+<aura:component >
+	<aura:attribute name="output" type="Integer" default="1992" />
+    <aura:registerEvent name="yearEvent" type="c:PassIntegerEvent" />
+    
+    <lightning:card>
+    	<div class="slds-box">
+        	<lightning:input type="number" name="output1" label="Enter the year" value="{!v.output}" />
+            <br />
+            <lightning:button variant="brand" label="Send Value" onclick="{!c.handleClick }" />
+        </div>
+    </lightning:card>
+</aura:component>

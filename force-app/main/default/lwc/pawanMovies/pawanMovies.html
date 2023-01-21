@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+       
+        <label slot = "title">
+        <img   src  = {logo.PK_LOGO} />
+            &nbsp;
+            Find Pawan Kalyan Movies by year
+        </label>
+           
+        <lightning-combobox 
+            name        = "year"
+            label       = "Year"
+            value       = {movie}
+            placeholder = "Select Year"
+            options     = {options}
+            onchange    = {handleChange}>
+        </lightning-combobox>
+        
+        <lightning-input type = "text" label = "Movie Name" value = {movie}></lightning-input>
+ 
+    <lightning-button variant = "brand" label = "Clear" title = "Primary action" onclick = {handleClick}>
+        </lightning-button>
+
+    </lightning-card>
+  
+</template>

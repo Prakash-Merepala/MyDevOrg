@@ -1,0 +1,20 @@
+<apex:page standardController="Account">
+     <apex:form >
+     <apex:pageBlock >
+          <apex:pageBlockButtons >
+                 <apex:commandButton action="{!Save}" value="Press me"/>
+         </apex:pageBlockButtons>
+         
+         <apex:pageBlockSection columns="2">
+            
+                 <apex:inputField value="{!Account.Name}"  label="NAME"/>
+                   <apex:inputField value="{!Account.Email__c}"  label="em@il"/>
+                     <apex:inputField value="{!Account.Phone}"  label="Mobile"/>
+                       <apex:inputField value="{!Account.Type}"  label="Type"/>
+                         <apex:inputField value="{!Account.Active__c}"  label="Status"/>
+              
+               
+         </apex:pageBlockSection>  
+         </apex:pageBlock>
+        </apex:form>   
+</apex:page>

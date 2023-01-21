@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name = "Name" type = "String"/>
+    <aura:attribute name = "Job" type = "String"/>
+    <aura:attribute name = "Age" type = "Integer"/>
+    <aura:attribute name = "Name1" type = "String" default = "Jaya Prakash Merepala" />
+   	<aura:attribute name = "Name2" type = "String" default = "Julee Kumari" />
+    <aura:attribute name = "Job1" type = "String" default = "Salsforce Developer" />
+    <aura:attribute name = "Job2" type = "String" default = "Youtube Trust and Safety"/>
+    <aura:attribute name = "Age1" type = "Integer" default  = '27'/>
+    <aura:attribute name = "Age2" type = "Integer" default  = '26'/>
+    {!v.Name}
+    <br> </br>
+    {!v.Age}
+    <br> </br>
+    {!v.Job}
+    <br> </br>
+    <ui:button label = "JP" press = "{!c.jp}"/>
+    <button class="slds-button slds-button_brand">Brand Button</button>
+    <ui:button label = "Julee" press = "{!c.shona}"/>
+    <br> </br>
+</aura:component>

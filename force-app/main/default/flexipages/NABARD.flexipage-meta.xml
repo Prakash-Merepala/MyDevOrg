@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>flowWithinLWC</componentName>
+                <identifier>c_flowWithinLWC</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region1</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>region2</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>Calculator_cmp</componentName>
+                <identifier>Calculator_cmp</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region3</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>NABARD</masterLabel>
+    <template>
+        <name>flexipage:appHomeTemplateHeaderTwoColumnsEqualWidth</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

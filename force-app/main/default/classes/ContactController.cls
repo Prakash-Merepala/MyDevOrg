@@ -1,4 +1,22 @@
+/**
+ * @description       : 
+ * @author            : Jaya Prakash Merepala
+ * @group             : 
+ * @last modified on  : 09-25-2022
+ * @last modified by  : Jaya Prakash Merepala
+**/
 public with sharing class ContactController {
+    
+    @AuraEnabled(cacheable=true)
+    public static List<Contact> getContacts(){
+        throw new AuraHandledException('Forced error');
+        /*return [
+            SELECT FirstName, LastName, Email
+            FROM Contact
+            WITH SECURITY_ENFORCED
+        ]; */
+    }
+    
     @AuraEnabled(cacheable=true)
     public static List<Contact> getContactList() {
         return [

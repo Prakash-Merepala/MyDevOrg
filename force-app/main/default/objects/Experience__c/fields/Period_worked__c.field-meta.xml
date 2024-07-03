@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Period_worked__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(
+ Currently_working_here__c = false,
+TEXT((YEAR(End_Date__c) - Year(Start_Date__c))) &amp; If((YEAR(End_Date__c) - Year(Start_Date__c))&gt;1, &apos; Years &apos;,&apos; Year &apos;) + TEXT((Month(End_Date__c) - Month(Start_Date__c))) &amp; If((Month(End_Date__c) - Month(Start_Date__c))&gt;1,&apos; Months&apos;,&apos; Month&apos;),
+TEXT((YEAR( TODAY()) - Year(Start_Date__c))) &amp; If((YEAR(TODAY()) - Year(Start_Date__c))&gt;1, &apos; Years &apos;,&apos; Year &apos;) + TEXT((Month(TODAY()) - Month(Start_Date__c))) &amp; If((Month(TODAY()) - Month(Start_Date__c))&gt;1,&apos; Months&apos;,&apos; Month&apos;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Period worked</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outlook_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT( Gender__c ) , &apos;Male&apos;,&apos;Mr.&apos;, CASE(TEXT(Marital__c), &apos;Married&apos;,&apos;Mrs.&apos;, &apos;Ms.&apos;) ) &amp;  Last_name__c  &amp; &apos;,&apos; &amp;  First_Name__c</formula>
+    <label>Outlook Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

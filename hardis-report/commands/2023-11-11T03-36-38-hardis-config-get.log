@@ -1,0 +1,2 @@
+/usr/local/bin/node /usr/local/bin/sfdx hardis:config:get --level user --json/usr/local/bin/node /usr/local/bin/sfdx hardis:config:get --level project --json[sfdx-hardis] {}
+[sfdx-hardis] {"installedApps":["git"]}

@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : Jaya Prakash Merepala
+  @group             : 
+  @last modified on  : 06-08-2023
+  @last modified by  : Jaya Prakash Merepala
+-->
+<template>
+    <lightning-card title="Record Owner Details" icon-name="standard:user">
+        <lightning-record-view-form record-id={userId} object-api-name="User" density="comfy" columns="2"
+            mode="view">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field field-name="Name"></lightning-output-field>
+                    <lightning-output-field field-name="Email"></lightning-output-field>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field field-name="LastLoginDate"></lightning-output-field>
+                    <lightning-output-field field-name="IsActive"></lightning-output-field>
+                </div>
+            </div>
+        </lightning-record-view-form>
+    </lightning-card>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Validation_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($CustomMetadata.Automation_Rules_Switch__mdt.Is_Rule_Active.Active__c ,  Price__c &lt; 10,    CONTAINS(&apos;test&apos;, Name__c)   )</errorConditionFormula>
+    <errorMessage>Price should be greater than 0</errorMessage>
+</ValidationRule>

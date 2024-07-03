@@ -1,0 +1,8 @@
+
+
+SELECT Name, (SELECT Company FROM Company__c) FROM Contact
+
+
+
+
+

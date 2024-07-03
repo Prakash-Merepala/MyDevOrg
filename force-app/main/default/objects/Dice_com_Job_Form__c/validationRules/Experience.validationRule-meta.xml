@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experience</fullName>
+    <active>true</active>
+    <errorConditionFormula>(
+ Experience__c  = 0
+ || 
+ Experience__c  &gt; 20)
+ &amp;&amp; 
+ ISPICKVAL( Country__c , &apos;India&apos;)</errorConditionFormula>
+    <errorDisplayField>Experience__c</errorDisplayField>
+    <errorMessage>Indian applicants must have experience not more than 20 years.</errorMessage>
+</ValidationRule>

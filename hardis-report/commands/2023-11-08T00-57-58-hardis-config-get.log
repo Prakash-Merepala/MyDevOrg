@@ -1,0 +1,14 @@
+/usr/local/bin/node /usr/local/bin/sfdx hardis:config:get --level project --json/usr/local/bin/node /usr/local/bin/sfdx hardis:config:get --level user --json[sfdx-hardis] Updated config file config/user/.sfdx-hardis.prakash.yml with values: 
+{
+  "installedApps": [
+    "git"
+  ]
+}
+[sfdx-hardis] {"installedApps":["git"]}
+[sfdx-hardis] Updated config file /Users/prakash/VS Code/MyDevOrg/config/user/.sfdx-hardis.prakash.yml with values: 
+{
+  "installedApps": [
+    "git"
+  ]
+}
+[sfdx-hardis] {}

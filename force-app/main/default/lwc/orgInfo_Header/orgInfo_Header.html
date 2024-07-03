@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-01-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+            <template if:true={userInfo.data}>
+                <template for:each={userInfo.data} for:item="info">
+                
+                       <p key={info.Id}> {info.Name} </p>
+                    
+                </template>
+            </template>
+<br>
+            <lightning-button label="Refresh" onclick={handleClick}></lightning-button>
+    </lightning-card>
+</template>

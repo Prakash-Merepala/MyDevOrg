@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>COVID_Positive__c</columns>
+    <columns>SARS_CoV_2__c</columns>
+    <columns>Tested_Date__c</columns>
+    <columns>Threshold_CT_Value__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

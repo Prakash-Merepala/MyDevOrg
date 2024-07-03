@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : Jaya Prakash Merepala
+  @group             : 
+  @last modified on  : 09-25-2022
+  @last modified by  : Jaya Prakash Merepala
+-->
+<template>
+    <lightning-card>
+        <template if:true={contacts.data}>
+            <lightning-datatable 
+            key-field="Id" 
+            data={contacts.data}
+            >
+            </lightning-datatable>
+        </template>
+
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
+    </lightning-card>
+</template>

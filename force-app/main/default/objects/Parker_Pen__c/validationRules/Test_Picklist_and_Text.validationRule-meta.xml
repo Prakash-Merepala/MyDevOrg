@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Picklist_and_Text</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Test_Picklist__c ,&apos;Yes&apos;),ISBLANK( Test_Text__c ))</errorConditionFormula>
+    <errorDisplayField>Test_Text__c</errorDisplayField>
+    <errorMessage>PLEASE SELECT OTHER OPTION</errorMessage>
+</ValidationRule>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Cloud_Used__c</fullName>
+    <externalId>false</externalId>
+    <label>Salesforce Cloud Used</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sales Cloud</fullName>
+                <default>false</default>
+                <label>Sales Cloud</label>
+            </value>
+            <value>
+                <fullName>Service Cloud</fullName>
+                <default>false</default>
+                <label>Service Cloud</label>
+            </value>
+            <value>
+                <fullName>Marketing Cloud</fullName>
+                <default>false</default>
+                <label>Marketing Cloud</label>
+            </value>
+            <value>
+                <fullName>Community Cloud</fullName>
+                <default>false</default>
+                <label>Community Cloud</label>
+            </value>
+            <value>
+                <fullName>Health Cloud</fullName>
+                <default>false</default>
+                <label>Health Cloud</label>
+            </value>
+            <value>
+                <fullName>Financial Cloud</fullName>
+                <default>false</default>
+                <label>Financial Cloud</label>
+            </value>
+            <value>
+                <fullName>Data Cloud</fullName>
+                <default>false</default>
+                <label>Data Cloud</label>
+            </value>
+            <value>
+                <fullName>AI Cloud</fullName>
+                <default>false</default>
+                <label>AI Cloud</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

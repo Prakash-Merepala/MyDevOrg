@@ -1,0 +1,27 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-16-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="COVID-19 Information">
+        <lightning-tabset variant="scoped">
+            <lightning-tab label="Salesforce Licenses">
+            <lightning-record-view-form record-id={recordId} object-api-name="UserLicense">
+                <div>
+                    <lightning-output-field field-name="Name"></lightning-output-field>
+                    <lightning-output-field field-name="TotalLicenses"></lightning-output-field>
+                </div>
+            </lightning-record-view-form>
+        </lightning-tab>
+        <lightning-tab label="Salesforce Licenses">
+            <div>
+                Name : {name},
+                TotalLicenses : {totalLicenses}
+            </div>
+        </lightning-tab>
+        </lightning-tabset>
+    </lightning-card>
+</template>

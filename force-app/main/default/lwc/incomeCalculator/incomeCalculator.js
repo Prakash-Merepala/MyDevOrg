@@ -1,7 +1,10 @@
 import { LightningElement, wire, api } from 'lwc';
+import { getRecord, getFieldValue,updateRecord, createRecord } from 'lightning/uiRecordApi';
 
 export default class IncomeCalculator extends LightningElement {
     @api
+
+    
 
     async createIncome(){
         await LightningAlert.open({

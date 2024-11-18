@@ -2,13 +2,13 @@
 @description       : 
 @author            : Jaya Prakash Merepala
 @group             : 
-@last modified on  : 07-02-2024
+@last modified on  : 07-03-2024
 @last modified by  : Jaya Prakash Merepala
 -->
 <template>
     <div>
         <lightning-card title="Income Calculator" icon-name="custom:custom14">
-            <lightning-button label="Add Income" slot="actions"></lightning-button>
+            <lightning-button label="Add Income" onclick={createIncome} slot="actions"></lightning-button>
             <lightning-layout multiple-rows>
                 <lightning-layout-item padding="around-small">
                     <lightning-input type="currency" name="invested" label="Amount"></lightning-input>
@@ -21,9 +21,6 @@
                 </lightning-layout-item>
                 <lightning-layout-item padding="around-small">
                     <lightning-input type="number" name="returns" label="Interest Received per month" value={interest}></lightning-input>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <lightning-textarea name="input1" label="Enter some text" value="Amount:"></lightning-textarea> 
                 </lightning-layout-item>
                 <lightning-layout-item padding="around-small">
                     <lightning-input type="currency" name="totalPrincipal" label="Total Principal" value={totalPrincipal}></lightning-input>
